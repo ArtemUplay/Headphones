@@ -11,60 +11,51 @@
 </head>
 
 <body class="root">
-<header class="header">
-  <h1 class="header__logo">QPICK</h1>
-  <ul class="header__icons">
-    <li class="header__item">
-      <a href="#" class="header__link">
-        <img src="images/heart.svg" alt="favorite" class="header__icon header__icon_item_favorite">
-        <span class="header__counter header__counter_item_favorite">2</span>
-      </a>
-    </li>
-    <li class="header__item">
-      <a href="#" class="header__link">
-        <img src="images/cart.svg" alt="cart" class="header__icon header__icon_item_cart">
-        <span class="header__counter header__counter_item_cart">1</span>
-      </a>
-    </li>
-  </ul>
-</header>
-<main class="content">
-  <section class="headphones">
-    <h2 class="headphones__title">Наушники</h2>
-    <ul class="headphones__list">
-      <li class="headphones__item">
-        <article class="headphones__card card">
-          <img class="card__image" src="./images/Apple BYZ S852I.png" alt="Apple BYZ S852I">
-          <div class="card__description">
-            <h3 class="card__name">Apple BYZ S852I</h3>
-            <div class="card__price-wrapper">
-              <span class="card__price">2927 ₽</span>
-              <span class="card__old-price">3527 ₽</span>
-            </div>
-            <span class="card__rate">4.7</span>
-            <button type="button" aria-label="Купить" class="card__button-buy">Купить</button>
-          </div>
-        </article>
+  <header class="header">
+    <h1 class="header__logo">QPICK</h1>
+    <ul class="header__icons">
+      <li class="header__item">
+        <a href="#" class="header__link">
+          <img src="images/heart.svg" alt="favorite" class="header__icon header__icon_item_favorite">
+          <span class="header__counter header__counter_item_favorite">2</span>
+        </a>
       </li>
-      <li class="headphones__item">
-        <article class="headphones__card card"></article>
-      </li>
-      <li class="headphones__item">
-        <article class="headphones__card card"></article>
-      </li>
-      <li class="headphones__item">
-        <article class="headphones__card card"></article>
-      </li>
-      <li class="headphones__item">
-        <article class="headphones__card card"></article>
-      </li>
-      <li class="headphones__item">
-        <article class="headphones__card card"></article>
+      <li class="header__item">
+        <a href="#" class="header__link">
+          <img src="images/cart.svg" alt="cart" class="header__icon header__icon_item_cart">
+          <span class="header__counter header__counter_item_cart">1</span>
+        </a>
       </li>
     </ul>
-  </section>
-</main>
-<script type="module" src="js/components/index.js"></script>
+  </header>
+  <main class="content">
+    <section class="headphones">
+      <h2 class="headphones__title">Наушники</h2>
+      <ul class="headphones__list">
+        <template id="card-template">
+          <li class="headphones__item">
+            <article class="headphones__card card">
+              <img class="card__image" src="" alt="">
+              <div class="card__description">
+                <h3 class="card__name"></h3>
+                <div class="card__price-wrapper">
+                  <span class="card__price"></span>
+                  <span class="card__old-price"></span>
+                </div>
+                <span class="card__rate"></span>
+                <button type="button" aria-label="Купить" class="card__button-buy">Купить</button>
+              </div>
+            </article>
+          </li>
+        </template>
+      </ul>
+    </section>
+    <section class="headphones wireless-headphones">
+      <h2 class="headphones__title wireless-headphones__title">Беспроводные наушники</h2>
+      <ul class="headphones__list wireless-headphones__list"></ul>
+    </section>
+  </main>
+  <script type="module" src="js/components/index.js"></script>
 </body>
 
 </html>
