@@ -1,3 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../css/blocks/root/root.css);
 @import url(../css/blocks/header/header.css);
+@import url(../css/blocks/content/content.css);
+@import url(../css/blocks/headphones/headphones.css);
+@import url(../css/blocks/card/card.css);
