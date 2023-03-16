@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
   <title>Headphones</title>
 </head>
 
-<body>
-
+<body class="root">
+  <header class="header">
+    <span class="header__logo">QPICK</span>
+    <ul class="header__icons">
+      <li class="header__item">
+        <a href="#" class="header__link">
+          <img src="images/heart.svg" alt="favorite" class="header__icon header__icon_item_favorite">
+          <span class="header__counter header__counter_item_favorite">2</span>
+        </a>
+      </li>
+      <li class="header__item">
+        <a href="#" class="header__link">
+          <img src="images/cart.svg" alt="cart" class="header__icon header__icon_item_cart">
+          <span class="header__counter header__counter_item_cart">1</span>
+        </a>
+      </li>
+    </ul>
+  </header>
 
   <script type="module" src="js/components/index.js"></script>
 </body>
